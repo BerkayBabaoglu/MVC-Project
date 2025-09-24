@@ -1,0 +1,12 @@
+﻿@model StajMVC.Models.Students
+
+<h2>Yeni Öğrenci Ekle</h2>
+
+@using (Html.BeginForm())
+            {
+                <p>Ad: @Html.TextBoxFor(m => m.Name)</p>
+                <p>Yaş: @Html.TextBoxFor(m => m.Age)</p>
+                <input type="submit" value="Kaydet"/>
+
+            }
+

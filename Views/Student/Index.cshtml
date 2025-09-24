@@ -1,0 +1,26 @@
+﻿@model List<StajMVC.Models.Students>
+
+<h2>Öğrenci Listesi</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>İsim</th>
+        <th>Yaş</th>
+    </tr>
+
+    @foreach (var s in Model)
+    {
+        <td>@s.Id</td>
+        <td>@s.Name</td>
+        <td>@s.Age</td>
+    }
+
+</table>
+
+<p>
+
+    @Html.ActionLink("Yeni Öğrenci Ekle","Create")
+
+</p>
+
